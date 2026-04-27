@@ -1,0 +1,625 @@
+/* =====================================================
+   PROYECTOS - ESTILOS MODERNOS Y RESPONSIVOS
+   Página dedicada exclusivamente a proyectos de SAVIDE
+   ===================================================== */
+
+/* ==================== HERO PROYECTOS ==================== */
+.hero-proyectos{
+    position: relative;
+    height: 420px;
+    width: 100%;
+    margin: 80px 0;
+    background: url("../images/fondo-programas.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+/* Overlay oscuro */
+.hero-proyectos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 30, 50, 0.65);
+    z-index: 1;
+}
+
+/* Contenedor del contenido */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: white;
+}
+
+
+/* Título */
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+/* Texto */
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* ==================== SECCIÓN PROYECTOS ==================== */
+.proyectos-section {
+    padding: 0 0 80px 0;
+    background: #ffffff !important;
+    background-image: none !important;
+}
+
+.proyectos-section .container {
+    max-width: 1200px;
+}
+
+.proyectos-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.proyectos-intro h2 {
+    font-size: 2.5rem;
+    color: #1f2d3d;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.proyectos-intro .section-description {
+    color: #64748b;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.proyecto-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid #e5edf6;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto-imagen {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background: #f8f9fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.proyecto-imagen img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.proyecto-card:hover .proyecto-imagen img {
+    transform: scale(1.02);
+}
+
+.proyecto-categoria {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--color-secundario);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.proyecto-content {
+    padding: 2rem;
+}
+
+.proyecto-content h3 {
+    font-size: 1.25rem;
+    color: #1f2d3d;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.proyecto-content p {
+    color: #4f6376;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.proyecto-metrics {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.proyecto-metrics span {
+    background: #f8f9fa;
+    color: var(--color-secundario);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.proyecto-status {
+    text-align: center;
+}
+
+.proyecto-status span {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-active {
+    background: #e8f5e8;
+    color: var(--color-primario);
+}
+
+.status-completed {
+    background: #e3f2fd;
+    color: var(--color-secundario);
+}
+
+.status-planning {
+    background: #fff3e0;
+    color: var(--color-secundario-claro);
+}
+
+/* TITULO DE AÑO */
+
+.proyectos-year{
+    margin:60px 0 30px;
+    text-align:left;
+}
+
+.proyectos-year h3{
+    font-size:1.4rem;
+    font-weight:700;
+    color:#1f2d3d;
+    position:relative;
+    padding-bottom:8px;
+}
+
+.proyectos-year h3::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:50px;
+    height:3px;
+    background:var(--color-secundario);
+    border-radius:2px;
+}
+
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+    .hero-proyectos {
+        height: auto;
+        min-height: 48vh;
+        margin: 70px auto 20px;
+        padding: 2rem 0 1rem;
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        padding: 0 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.2rem, 5vw, 2.8rem);
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .proyecto-card,
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .proyectos-section {
+        padding: 0 0 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-proyectos {
+        min-height: 46vh;
+        width: 100vw;
+        margin: 60px auto 18px;
+        margin-left: calc(-50vw + 50%);
+        padding: 1.8rem 0 0.9rem;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+        line-height: 1.15;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+        max-width: 32rem;
+        margin: 0 auto;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .proyecto-card {
+        border-radius: 14px;
+    }
+
+    .proyecto-content {
+        padding: 1.25rem;
+    }
+
+    .proyecto-imagen {
+        height: 160px;
+    }
+
+    .proyecto-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .proyecto-content p {
+        font-size: 0.95rem;
+    }
+
+    .proyecto-metrics {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .proyecto-categoria {
+        top: 0.85rem;
+        right: 0.85rem;
+        padding: 0.45rem 0.9rem;
+        font-size: 0.78rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-proyectos {
+        min-height: 42vh;
+        margin: 55px auto 14px;
+        padding: 1.6rem 0 0.75rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .proyecto-content {
+        padding: 1rem;
+    }
+
+    .proyecto-imagen {
+        height: 140px;
+    }
+
+    .proyecto-content h3 {
+        font-size: 1.08rem;
+    }
+
+    .proyecto-content p {
+        font-size: 0.9rem;
+    }
+
+    .proyecto-metrics span,
+    .proyecto-status span {
+        font-size: 0.8rem;
+        padding: 0.35rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-proyectos {
+        min-height: auto;
+        padding: 1.6rem 0 0.9rem;
+        margin: 48px auto 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.45rem;
+    }
+
+    .hero-content p {
+        font-size: 0.86rem;
+    }
+
+    .proyectos-section {
+        padding: 2.5rem 0 40px;
+    }
+
+    .proyectos-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .proyecto-card {
+        border-radius: 12px;
+    }
+
+    .proyecto-imagen {
+        height: 130px;
+    }
+
+    .proyecto-content h3 {
+        font-size: 1rem;
+    }
+
+    .proyecto-content p {
+        font-size: 0.88rem;
+        margin-bottom: 1rem;
+    }
+
+    .proyecto-categoria {
+        top: 0.75rem;
+        right: 0.75rem;
+        padding: 0.4rem 0.75rem;
+    }
+}
+
+html,
+body,
+main,
+.proyectos-section,
+.proyectos-section .container {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+/* ==================== BOTÓN VOLVER ARRIBA ==================== */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: var(--sombra-media);
+    transition: var(--transicion);
+}
+
+.scroll-to-top.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--color-primario-oscuro);
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.scroll-to-top svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 600px) {
+    .hero-proyectos {
+        min-height: 42vh;
+        height: auto;
+        margin: 56px auto 20px;
+        padding: 1.4rem 0 0.9rem;
+    }
+
+    .hero-content {
+        padding: 0 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(1.6rem, 7vw, 2rem);
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .proyectos-section {
+        padding: 0 0 2.5rem 0;
+        background: #ffffff !important;
+        background-image: none !important;
+    }
+
+    .proyectos-intro {
+        margin-bottom: 2rem;
+    }
+
+    .proyectos-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .proyecto-content {
+        padding: 1.1rem;
+    }
+
+    .proyecto-imagen {
+        height: 180px;
+    }
+
+    .proyecto-categoria {
+        font-size: 0.72rem;
+        padding: 0.42rem 0.72rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.86rem;
+    }
+
+    .proyecto-content h3 {
+        font-size: 0.98rem;
+    }
+
+    .proyecto-metrics span,
+    .proyecto-status span {
+        font-size: 0.74rem;
+    }
+}
+
+/* Paridad móvil con Nosotros (solo celular, reducido) */
+@media (max-width: 768px) {
+    .hero-proyectos {
+        min-height: 45vh;
+        height: auto;
+        width: 100vw;
+        margin: 62px auto 16px;
+        margin-left: calc(-50vw + 50%);
+        padding: 1.6rem 0 0.9rem;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .proyectos-section {
+        background: #ffffff;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-proyectos {
+        min-height: 42vh;
+        height: auto;
+        width: 100vw;
+        margin: 56px auto 20px;
+        margin-left: calc(-50vw + 50%);
+        padding: 1.4rem 0 0.9rem;
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        padding: 0 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(1.6rem, 7vw, 2rem);
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-proyectos {
+        min-height: 38vh;
+        width: 100vw;
+        margin: 42px auto 14px;
+        margin-left: calc(-50vw + 50%);
+        padding: 1.4rem 0 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.86rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-proyectos {
+        min-height: 36vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.45rem;
+    }
+
+    .hero-content p {
+        font-size: 0.84rem;
+    }
+}
+
+
