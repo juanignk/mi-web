@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAVIDE PERÚ - Organización dedicada al desarrollo social y bienestar comunitario">
+    <meta name="keywords" content="ONG, desarrollo social, Perú, comunidad">
+    <meta name="author" content="SAVIDE PERÚ">
+    <title>SAVIDE PERÚ - Desarrollo Social y Comunitario</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ==================== HEADER Y NAVEGACIÓN ==================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo SAVIDE PERÚ" class="logo-icon">
+                    <span class="logo-text">SAVIDE PERÚ</span>
+                </div>
+
+                <!-- Botón Hamburguesa -->
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Menú de Navegación -->
+                <nav class="navbar" id="navbar">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="html/nosotros.html" class="nav-link">Nosotros</a></li>
+                        <li><a href="html/programas.html" class="nav-link">Programas</a></li>
+                        <li><a href="html/noticias.html" class="nav-link">Noticias</a></li>
+                        <li><a href="html/contacto.html" class="nav-link">Contacto</a></li>
+                        <!-- Botón de donación en cabecera -->
+                        <li><a href="#donar" class="nav-link btn-donar">Donar Ahora</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="inicio">
+            <div class="hero-content container">
+
+                <h1 class="hero-title">
+                    Juntos <br><span class="highlight-orange">transformamos</span><br> Vidas
+                </h1>
+
+                <p class="hero-subtitle">
+                    SAVIDE lleva salud, educación y esperanza a las comunidades más vulnerables del Perú.
+                    Cada acción cuenta, cada vida importa.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="btn btn-red" href="#donar">Quiero Donar</a>
+                    <a class="btn btn-outline" href="html/nosotros.html">Conoce Nuestra Misión</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">25.350+</span>
+                        <span class="hero-stat-label">Beneficiados</span>
+                    </div>
+
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">10 años</span>
+                        <span class="hero-stat-label">De impacto</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+    <!-- ==================== SECCIÓN PROGRAMAS (CARRUSEL FULL WIDTH) ==================== -->
+    <section class="programas-tiles">
+        <div class="container programas-head">
+            <h2>Programas Que Transforman</h2>
+            <p>Conoce nuestras principales líneas de acción para generar impacto sostenible en las comunidades.</p>
+        </div>
+
+        <div class="program-carousel" id="program-carousel" aria-label="Carrusel de programas SAVIDE">
+            <div class="program-carousel-track">
+                <a href="html/programas.html#brazos-de-mujer" class="program-tile tile-1">
+                    <div class="tile-icon"><img src="images/logo_brazosdemujer.png" alt="Escuela de Empoderamiento y Emprendimiento"></div>
+                    <h3>ESCUELA DE EMPODERAMIENTO Y EMPRENDIMIENTO LIDERESAS COMUNITARIAS "BRAZOS DE MUJER"</h3>
+                </a>
+                <a href="html/programas.html#reciclar-para-transformar-vidas" class="program-tile tile-2">
+                    <div class="tile-icon"><img src="images/logo_reciclaje.png" alt="Reciclar para transformar vidas"></div>
+                    <h3>PROGRAMA ESPECIAL DE RECICLAJE "RECICLAR PARA TRANSFORMAR VIDAS"</h3>
+                </a>
+                <a href="html/programas.html#angeli-vitae" class="program-tile tile-3">
+                    <div class="tile-icon"><img src="images/logo_angelivitae.png" alt="Banco de medicinas Angeli Vitae"></div>
+                    <h3>BANCO DE MEDICINAS "ANGELI VITAE"</h3>
+                </a>
+                <a href="html/programas.html#microfinanzas-savide" class="program-tile tile-4">
+                    <div class="tile-icon"><img src="images/microfinanzas.png" alt="Microfinanzas SAVIDE Perú"></div>
+                    <h3>MICROFINANZAS SAVIDE PERÚ</h3>
+                </a>
+            </div>
+
+            <button class="program-carousel-btn prev" type="button" aria-label="Programa anterior">&#10094;</button>
+            <button class="program-carousel-btn next" type="button" aria-label="Programa siguiente">&#10095;</button>
+
+            <div class="program-carousel-dots" aria-label="Indicadores del carrusel"></div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCIÓN ESTADÍSTICAS ==================== -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-header">Estadísticas clave</h2>
+        </div>
+        <div class="container stats-layout">
+            <div class="stats-column stats-left">
+                <div class="stat">
+                    <div class="stat-number">25,350</div>
+                    <p>Personas directamente beneficiadas desde el 2015 al 2025</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">85</div>
+                    <p>Programas y actividades desarrolladas</p>
+                </div>
+            </div>
+            <div class="stats-image">
+                <img src="images/stats_image.png" alt="Niños y comunidad">
+            </div>
+            <div class="stats-column stats-right">
+                <div class="stat">
+                    <div class="stat-number">S/ 330K</div>
+                    <p>Inversión total al 2025</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">69</div>
+                    <p>Alianzas, Convenios, Actas de Cooperación firmadas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCIÓN DONACIÓN (RECREADA) ==================== -->
+    <section class="donacion" id="donar">
+        <div class="container donacion-container">
+            <div class="donacion-content">
+                <span class="donacion-tag">Donar Ahora</span>
+                <h2>Tu aporte hoy se convierte en oportunidades reales</h2>
+                <p class="lead">
+                    Con una donación única o mensual ayudas a financiar terapias, becas y
+                    campañas de prevención para niñas, niños y familias en situación de vulnerabilidad.
+                </p>
+
+                <div class="donar-grid">
+                    <article class="donar-card donar-card-alt">
+                        <h3>Escanea y Dona por Yape, Plin u otras billeteras</h3>
+                        <p class="donar-ayuda">Escanea el QR, ingresa el monto que desees en tu app y confirma.</p>
+
+                        <div class="donar-qr-wrap">
+                            <img src="images/yape.jpeg" alt="QR de donación Yape y Plin" class="donar-qr">
+                        </div>
+
+                        <div class="donar-metodos" aria-label="Métodos de donación">
+                            <span>Yape</span>
+                            <span>Plin</span>
+                            <span>Otras billeteras</span>
+                        </div>
+
+                        <p class="donar-numero">953 242 278</p>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ==================== ÚLTIMAS NOTICIAS ==================== -->
+    <section class="ultimas-noticias">
+        <div class="container">
+            <div class="noticias-header">
+                <h2>Últimas Noticias</h2>
+                <p>Mantente informado sobre nuestras actividades, logros y el impacto que
+                    estamos generando en las comunidades
+                </p>
+            </div>
+
+            <div class="noticias-grid" id="home-noticias-grid">
+                <!-- Noticia 1 -->
+                <article class="noticia-card">
+                    <div class="noticia-badge salud">Salud Comunitaria</div>
+                    <img src="images/proyecto1.jpg" alt="Campaña de Salud">
+                    <div class="noticia-info">
+                        <span class="noticia-fecha">15 de Enero, 2025</span>
+                        <h3>Campaña de Salud Preventiva llega a 8 comunidades rurales</h3>
+                        <p>SAVIDE realizó jornadas de atención médica gratuita beneficiando a más de 500 familias. Se brindaron consultas médicas, vacunación y orientación.</p>
+                        <a href="#" class="btn-noticia">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- Noticia 2 -->
+                <article class="noticia-card">
+                    <div class="noticia-badge educacion">Educación</div>
+                    <img src="images/proyecto1.jpg" alt="Taller de Liderazgo">
+                    <div class="noticia-info">
+                        <span class="noticia-fecha">28 de Diciembre, 2024</span>
+                        <h3>Talleres de Liderazgo Juvenil transforman a 120 jóvenes</h3>
+                        <p>Nuestro programa de desarrollo de habilidades culminó su tercera edición con resultados extraordinarios. Los participantes desarrollaron liderazgo y trabajo en equipo.</p>
+                        <a href="#" class="btn-noticia">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- Noticia 3 -->
+                <article class="noticia-card">
+                    <div class="noticia-badge alianzas">Alianzas</div>
+                    <img src="images/proyecto1.jpg" alt="Nueva Alianza">
+                    <div class="noticia-info">
+                        <span class="noticia-fecha">10 de Diciembre, 2024</span>
+                        <h3>Nueva alianza estratégica amplía nuestro alcance regional</h3>
+                        <p>SAVIDE firma convenio con importantes empresas del sector privado para expandir programas de becas y atención integral.</p>
+                        <a href="#" class="btn-noticia">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="noticias-btn">
+                <a href="html/noticias.html" class="btn btn-primary">Ver todas las noticias</a>
+            </div>
+        </div>
+    </section>
+        
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Columna 1: Sobre -->
+                <div class="footer-column">
+                    <h4>SAVIDE PERÚ</h4>
+                    <p>
+                        Organizacion comprometida con el desarrollo social integral 
+                        y sostenible de las comunidades más vulnerables en Perú.
+                    </p>
+                    <div class="social-links">
+                    <a href="https://www.facebook.com/ONG.SAVIDE.PERU.OFICIAL/" target="_blank" title="Facebook" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@savide.peru.oficial" target="_blank" title="TikTok" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.6c.18 0 .35.02.52.05V9.23a6.37 6.37 0 00-.52-.02A6.34 6.34 0 002 15.55a6.34 6.34 0 0011.09 4.17 6.28 6.28 0 002.1-4.71V9.8a8.2 8.2 0 004.38 1.23V7.58a4.86 4.86 0 01-3.98-0.89z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/savide_peru_oficial/" target="_blank" title="Instagram" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+                <!-- Columna 2: Enlaces -->
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="html/nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="html/programas.html">Nuestros Programas</a></li>
+                        <li><a href="html/noticias.html">Noticias</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Información Legal -->
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="html/politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="html/terminos-servicio.html">Términos de Servicio</a></li>
+                        <li><a href="html/aviso-legal.html">Aviso Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Inferior -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 SAVIDE PERÚ. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-credits">
+                    <p>Diseñado con ❤️ para las comunidades de Perú</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOTÓN VOLVER ARRIBA ==================== -->
+    <button class="scroll-to-top" id="scroll-to-top" title="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
